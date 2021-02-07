@@ -11,9 +11,10 @@ class _MyAppState extends State<MyApp> {
   int qindex = 0;
   int rightrow = 0;
   int imageindex = 0;
-
+  String rightAnswer = "Choose an option first";
   void validateanswer(int correct) {
     //Validation of right answer.
+
     if (qindex < 7) {
       if (correct == 1) {
         setState(() {
@@ -28,6 +29,9 @@ class _MyAppState extends State<MyApp> {
           });
         }
         print("The right answer is : " + options[qindex][rightrow]['option']);
+        setState(() {
+          rightAnswer = options[qindex][rightrow]['option'];
+        });
       }
     } else {
       //We need to somehow return a Text widget in this condition
@@ -172,8 +176,8 @@ class _MyAppState extends State<MyApp> {
                 ],
               ),
             ),
-            Text(
-                "The right answer is : " + options[qindex][rightrow]['option']),
+            Text("The right answer is : " +
+                rightAnswer), //options[qindex][rightrow]['option']),
           ],
         ),
       ),
