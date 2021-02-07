@@ -176,8 +176,7 @@ class _MyAppState extends State<MyApp> {
                 ],
               ),
             ),
-            Text("The right answer is : " +
-                rightAnswer), //options[qindex][rightrow]['option']),
+            Text("The right answer is : " + rightAnswer),
           ],
         ),
       ),
