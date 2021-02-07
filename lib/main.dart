@@ -2,22 +2,6 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
-/*class Endpoint extends StatefulWidget {
-  @override
-  _EndpointState createState() => _EndpointState();
-}
-
-class _EndpointState extends State<Endpoint> {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Container(
-        child: Text("Congratulations on completing the quiz !"),
-      ),
-    );
-  }
-}*/
-
 class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
