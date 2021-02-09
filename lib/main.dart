@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'splashscreen.dart';
+import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,14 +12,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Alpha India"),
-        ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SplashScreen(),
-          ],
+        body: Container(
+          child: SplashScreen(),
         ),
       ),
     );
